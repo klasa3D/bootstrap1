@@ -13,18 +13,26 @@
 <div class="container">
   <h2>Rounded Corners</h2>
   <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>            
-  <img src="rys1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+  <img src="rys1.jpg" class="img-rounded" alt="pies1" width="304" height="236" onclick="pies()" id="pies1"> 
 </div>
 <div class="container">
     <h2>Circle</h2>
     <p>The .img-circle class shapes the image to a circle (not available in IE8):</p>            
-    <img src="rys1.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+    <img src="rys2.jpg" class="img-circle" alt="pies2" width="304" height="236"> 
   </div>
   <div class="container">
     <h2>Thumbnail</h2>
     <p>The .img-thumbnail class creates a thumbnail of the image:</p>            
-    <img src="rys1.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+    <img src="rys1.jpg" class="img-thumbnail" alt="pies3" width="304" height="236"> 
   </div>
+<script>
+    function pies(){
+        document.getElementById("pies1").src = "rys2.jpg";
+        
+    }
 
+
+
+</script>
 </body>
 </html>
