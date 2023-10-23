@@ -7,13 +7,96 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Pieski</a></li>
+        <li><a href="#">Liga Legend</a></li>
+        <li><a href="#">Twitch</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Kariera Xayoo</h1>
+      <p>Pseudonim Xayoo pochodzi z animowanych walk na YouTube i serii Naruto. Jego rozpoznawalność i popularność wzięły się z kariery e-sportowej, gdy był aktywnym zawodnikiem drużyn League of Legends. Jego charyzma i specyficzne poczucie humoru sprawiły, że stał się on jednym z najchętniej oglądanych streamerów na platformie Twitch. Marcin Majkut jest założycielem grupy Xayoo Industries, do której należą poza nim inni streamerzy: między innymi Japczan, Popo, Vysotzky, LukiSteve, MokrySuchar, Młodziutki, czy Dejvid. W 2022 zadebiutował w oktagonie Fame MMA i wygrał swoją walkę przed czasem. W tym samym roku Majkut spróbował swoich sił w muzyce i na YouTube znajdziemy dwa utwory z jego udziałem. Na Twitchu obserwuje go niemal milion użytkowników.</p>
+      <h1>Życie prywatne</h1>
+      <p>O życiu prywatnym Marcina Majkuta wiadomo niewiele. Strzeże on swojej prywatności i często znika z internetu. Jego wierni widzowie zawsze jednak czekają na jego powrót i wspierają go w internetowej twórczości.</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<footer class="container-fluid text-center">
+    <div class="container">
+        <h2>ZEJU</h2>
+       <img src="zeju.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+      </div>
+</footer>
 
 </body>
 </html>
